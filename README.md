@@ -8,11 +8,13 @@ Add env variables:
 cp .env .env.sample
 ```
 
-edit `HOST_PORT` to the port from which you want to access the ui. Start the service
+edit `CUSTOM_SUBDOMAIN` in your .env file to the value you want. Start the service
 
 ```bash
 docker compose up -d
 ```
+
+To access the UI, go to `http://<CUSTOM_SUBDOMAIN>.localhost` in your browser.
 
 ## Stop the app
 

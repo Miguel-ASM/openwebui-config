@@ -7,7 +7,7 @@ server {
 
 server {
   listen 80;
-  server_name ai.localhost;
+  server_name ${CUSTOM_SUBDOMAIN}.localhost;
 
   location / {
     proxy_pass http://open-webui:8080/;
